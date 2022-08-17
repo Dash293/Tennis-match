@@ -1,36 +1,57 @@
-import Counter from "@components/Counter";
-import logo from "@assets/logo.svg";
+import Style from "./style";
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <Style>
+      <form>
+        <div className="select-players">
+          <div className="player1">
+            <div className="name-player1">
+              <label htmlFor="player1">Nom joueur 1</label>
+              <input type="text" id="player1" placeholder="Exemple : Novak" />
+            </div>
+            <div className="select-level-player1">
+              <label htmlFor="level-player1">Niveau joueur 1</label>
+              <select name="level1" id="level-player1">
+                <option value="1">Niveau 1</option>
+                <option value="2">Niveau 2</option>
+                <option value="3">Niveau 3</option>
+                <option value="4">Niveau 4</option>
+                <option value="5">Niveau 5</option>
+                <option value="6">Niveau 6</option>
+                <option value="7">Niveau 7</option>
+                <option value="8">Niveau 8</option>
+                <option value="9">Niveau 9</option>
+                <option value="10">Niveau 10</option>
+              </select>
+            </div>
+          </div>
+          <div className="player2">
+            <div className="name-player2">
+              <label htmlFor="player2">Nom joueur 2</label>
+              <input type="text" id="player2" placeholder="Exemple : Rafael" />
+            </div>
+            <div className="select-level-player2">
+              <label htmlFor="level-player2">Niveau joueur 2</label>
+              <select name="level2" id="level-player2">
+                <option value="1">Niveau 1</option>
+                <option value="2">Niveau 2</option>
+                <option value="3">Niveau 3</option>
+                <option value="4">Niveau 4</option>
+                <option value="5">Niveau 5</option>
+                <option value="6">Niveau 6</option>
+                <option value="7">Niveau 7</option>
+                <option value="8">Niveau 8</option>
+                <option value="9">Niveau 9</option>
+                <option value="10">Niveau 10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div className="start-game">
+          <input type="submit" value="Commencer le match" />
+        </div>
+      </form>
+    </Style>
   );
 }
