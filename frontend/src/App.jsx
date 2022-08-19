@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "@pages/Home";
+import Home2 from "@pages/Home2";
 // import Game from "@pages/Game";
 // import Result from "@pages/Result";
 import Header from "@components/Header";
@@ -12,10 +12,7 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="*" element={<Home />} />;
-            <Route path="/" element={<Home />} />;
-            {/* <Route path="/game" element={<Game />} />;
-            <Route path="/result" element={<Result />} />; */}
+            <Route path="/" element={<Home2 />} />;
           </Routes>
         </main>
       </Styled>
